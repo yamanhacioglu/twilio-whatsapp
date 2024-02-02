@@ -1,0 +1,38 @@
+{
+    "name": "northlab/twilio-whatsapp",
+    "description": "Twilio API için Northlab tarafından geliştirilen Composer paketi.",
+    "type": "composer-plugin",
+    "require": {
+        "twilio/sdk": "dev-main"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Northlab\\TwilioWhatsapp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yaman HACIOĞLU",
+            "email": "yaman@yamanhacioglu.com.tr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Northlab\\TwilioWhatsapp\\TwilioWhatsappServiceProvider"
+            ],
+            "aliases": {
+                "LaraTwilio": "Northlab\\TwilioWhatsapp\\TwilioWhatsapp"
+            }
+        }
+    }
+}
