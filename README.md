@@ -11,7 +11,6 @@ composer require northlab/twilio-whatsapp
 
 ## Kullanım
 
-```bash
 
 <?php
 
