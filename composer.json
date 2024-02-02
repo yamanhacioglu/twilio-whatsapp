@@ -3,7 +3,7 @@
     "description": "Twilio API için Northlab tarafından geliştirilen Composer paketi.",
     "type": "composer-plugin",
     "require": {
-        "twilio/sdk": "dev-main"
+        "twilio/sdk": "^7.14"
     },
     "license": "MIT",
     "autoload": {
